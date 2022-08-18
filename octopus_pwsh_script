@@ -1,0 +1,14 @@
+write-host "Downloading scan files"
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-DAST-and-Octopus/main/dast.login -OutFile dast.login
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-DAST-and-Octopus/main/manualexplorer.exd -OutFile manualexplorer.exd
+
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-DAST-and-Octopus/main/scripts/appscanase_create_application_ase.ps1 -OutFile appscanase_create_application_ase.ps1
+.\appscanase_create_application_ase.ps1
+
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-DAST-and-Octopus/main/scripts/appscanase_scan.ps1 -OutFile appscanase_scan.ps1
+.\appscanase_scan.ps1
+
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-DAST-and-Octopus/main/scripts/appscanase_get_pdf_report_from_enterprise.ps1 -OutFile appscanase_get_pdf_report_from_enterprise.ps1
+.\appscanase_get_pdf_report_from_enterprise.ps1
+
+Get-ChildItem . -Recurse -Include *.pdf | New-OctopusArtifact
