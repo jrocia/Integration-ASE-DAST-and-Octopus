@@ -1,3 +1,5 @@
+# Source: https://octopus.com/docs/octopus-rest-api/examples/artifacts/create-and-upload-artifacts
+
 $ErrorActionPreference = "Stop";
 
 Add-Type -AssemblyName System.Net.Http
