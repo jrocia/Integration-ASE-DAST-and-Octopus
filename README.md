@@ -11,7 +11,7 @@ Create a Process using Powershell Script. Important install the last pwsh versio
 Change to Powershell Core:
 ![image](https://user-images.githubusercontent.com/69405400/185495156-54deca7f-cc3e-4be9-b5b0-caf276cfcde4.png)
 
-Add the content:
+Add the content octopus_pwsh_script. Change the login and manualexplorer file locations:
 ![image](https://user-images.githubusercontent.com/69405400/185457172-5a87106a-8a71-496f-a554-fa7449b97a17.png)
 
 Security Gate Passed:
