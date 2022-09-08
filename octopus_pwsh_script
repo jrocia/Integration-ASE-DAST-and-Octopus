@@ -11,4 +11,10 @@ Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-DAST-and-Octopus/main/scripts/appscanase_get_pdf_report_from_enterprise.ps1 -OutFile appscanase_get_pdf_report_from_enterprise.ps1
 .\appscanase_get_pdf_report_from_enterprise.ps1
 
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-DAST-and-Octopus/main/scripts/appscanase_get_xml_report_from_enterprise.ps1 -OutFile appscanase_get_xml_report_from_enterprise.ps1
+.\appscanase_get_xml_report_from_enterprise.ps1
+
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/jrocia/Integration-ASE-DAST-and-Octopus/main/scripts/appscanase_check_security_gate.ps1 -OutFile appscanase_check_security_gate.ps1
+.\appscanase_check_security_gate.ps1
+
 Get-ChildItem . -Recurse -Include *.pdf | New-OctopusArtifact
