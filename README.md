@@ -22,3 +22,6 @@ Report uploaded to Octopus:
 
 Security Gate Failed:
 ![image](https://user-images.githubusercontent.com/69405400/189137636-606262a0-05e8-47e6-ba7f-4d91fcd54e52.png)
+
+AppScan Enterprise. The scan job is projectname-releasenumber:
+![image](https://user-images.githubusercontent.com/69405400/189140100-de0d28e8-6c59-4a85-b683-01781409a888.png)
