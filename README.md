@@ -1,4 +1,4 @@
-# Integration-ASE-DAST-and-Octopus
+# Integration: ASE DAST and Octopus
 
 ![image](https://user-images.githubusercontent.com/69405400/189136664-2771fdb9-6ed8-4acf-b59a-950687598842.png)
 
